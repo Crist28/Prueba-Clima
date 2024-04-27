@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Clima</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Enlace a Leaflet.css si lo estás utilizando -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+</head>
+<body>
+    <header>
+        <br>
+        <img class="logo" src="https://lageografia.com/wp-content/uploads/tormenta-clima.jpg" alt="">
+        <h1>Consulta de Clima</h1>
+        <form id="cityForm">
+            <label class="titulo2" for="cityInput">Ingrese el nombre de la ciudad:</label>
+            <input type="text" id="cityInput" required>
+            <button type="submit">Consultar Clima</button>
+            <button type="button" id="clearButton">Limpiar</button>
+        </form>
+
+        <br>
+
+    </header>
+
+    <main>
+        <br>
+        <div id="weatherTableContainer">
+            <table id="weatherTable">
+                <thead>
+                    <tr>
+                        <th>Ciudad</th>
+                        <th>Temperatura (°C)</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody id="weatherTableBody">
+                </tbody>
+            </table>
+        </div>
+        <!-- Define el contenedor del mapa con el tamaño específico -->
+        <div id="mapContainer">
+            <div id="map"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© Cristian Jaimes</p>
+    </footer>    
+
+    <!-- Agrega el enlace a Leaflet.js aquí -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="javascript/index.js"></script>
+</body>
+</html>
