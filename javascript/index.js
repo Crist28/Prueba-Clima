@@ -28,6 +28,8 @@ function fetchWeather(city) {
     })
     .catch(error => {
         console.error('Error fetching weather data:', error);
+        const tableBody = document.getElementById('weatherTableBody');
+        tableBody.innerHTML = '<tr><td colspan="3" class="error-message">Ciudad no encontrada</td></tr>';
     });
 }
 

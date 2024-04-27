@@ -17,6 +17,13 @@ header {
     background: linear-gradient(to bottom, #000080, #040A2F);
 }
 
+.error-message {
+    text-align: center;
+    background-color: #f2dede; /* Color de fondo para indicar un error */
+    color: #a94442; /* Color del texto */
+    padding: 10px;
+}
+
 .logo {
     width: 30%;
     border-radius: 20%; 
